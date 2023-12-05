@@ -16,5 +16,10 @@ namespace FiguriLabFour
             X = x;
             Y = y;
         }
+
+        public void PrintInfo()
+        {
+            Console.WriteLine($"Point: X = {X}, Y = {Y}");
+        }
     }
 }

@@ -6,13 +6,22 @@ using System.Threading.Tasks;
 
 namespace FiguriLabFour
 {
-    public class Line : Point
+    public class Line
     {
-        public Line(double x1, double y1, double x2, double y2) : base(x1, y1)
-        {
-            // Возможно, вам также нужны координаты второй точки
-            // ...
+        public Point StartPoint { get; set; }
+        public Point EndPoint { get; set; }
 
+        public Line(Point startPoint, Point endPoint)
+        {
+            StartPoint = startPoint;
+            EndPoint = endPoint;
+        }
+
+        public void PrintInfo()
+        {
+            Console.WriteLine("Line:");
+            StartPoint.PrintInfo();
+            EndPoint.PrintInfo();
         }
     }
 }

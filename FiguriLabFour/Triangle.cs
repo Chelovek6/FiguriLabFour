@@ -8,10 +8,16 @@ namespace FiguriLabFour
 {
     public class Triangle : Line
     {
-        public Triangle(double x1, double y1, double x2, double y2, double x3, double y3) : base(x1, y1, x2, y2)
+        public Triangle(Point startPoint, Point endPoint, Point thirdPoint) : base(startPoint, endPoint)
         {
-            // Возможно, вам также нужны координаты третьей точки
-            // ...
+            
+        }
+
+        public new void PrintInfo() 
+        {
+            Console.WriteLine("Triangle:");
+            base.PrintInfo();
         }
     }
+
 }

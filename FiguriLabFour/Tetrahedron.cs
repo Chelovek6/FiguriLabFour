@@ -10,9 +10,16 @@ namespace FiguriLabFour
     {
         public double Height { get; set; }
 
-        public Tetrahedron(double x1, double y1, double x2, double y2, double x3, double y3, double height) : base(x1, y1, x2, y2, x3, y3)
+        public Tetrahedron(Point startPoint, Point endPoint, Point thirdPoint, double height)
+            : base(startPoint, endPoint, thirdPoint)
         {
             Height = height;
+        }
+
+        public new void PrintInfo() 
+        {
+            Console.WriteLine($"Tetrahedron: Height = {Height}");
+            base.PrintInfo();
         }
     }
 }

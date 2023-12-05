@@ -1,11 +1,23 @@
 ﻿using FiguriLabFour;
+//Наследование 
+Point startPoint = new Point(0, 0);
+Point endPoint = new Point(3, 4);
+Point thirdPoint = new Point(6, 0);
+Triangle triangle = new Triangle(startPoint, endPoint, thirdPoint);
+Tetrahedron tetrahedron = new Tetrahedron(startPoint, endPoint, thirdPoint, 12);
 
-Square square = new Square(0, 0, 5);
-Cube cube = new Cube(0, 0, 5, 10);
+triangle.PrintInfo();
+tetrahedron.PrintInfo();
+    
+//
+Point FirstPoint = new Point(0, 0);
+Point LastPoint = new Point(3, 4);
+Line line = new Line(FirstPoint, LastPoint);
+Square square = new Square(line);
+Cube cube = new Cube(square, 10);
 
-Triangle triangle = new Triangle(0, 0, 3, 4, 6, 0);
-Tetrahedron tetrahedron = new Tetrahedron(0, 0, 3, 4, 6, 0, 12);
-
-Circle circle = new Circle(0, 0, 3);
-Ball ball = new Ball(0, 0, 3);
+startPoint.PrintInfo();
+line.PrintInfo();
+square.PrintInfo();
+cube.PrintInfo();
 

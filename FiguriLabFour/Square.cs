@@ -6,13 +6,19 @@ using System.Threading.Tasks;
 
 namespace FiguriLabFour
 {
-    public class Square : Line
+    public class Square
     {
-        public double Side { get; set; }
+        public Line Side { get; set; }
 
-        public Square(double x, double y, double side) : base(x, y, x + side, y)
+        public Square(Line side)
         {
             Side = side;
+        }
+
+        public void PrintInfo()
+        {
+            Console.WriteLine("Square:");
+            Side.PrintInfo();
         }
     }
 }

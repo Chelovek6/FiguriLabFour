@@ -6,13 +6,22 @@ using System.Threading.Tasks;
 
 namespace FiguriLabFour
 {
-    public class Cube : Square
+    public class Cube
     {
+        public Square BaseSquare { get; set; }
         public double Height { get; set; }
 
-        public Cube(double x, double y, double side, double height) : base(x, y, side)
+        public Cube(Square baseSquare, double height)
         {
+            BaseSquare = baseSquare;
             Height = height;
         }
+
+        public void PrintInfo()
+        {
+            Console.WriteLine($"Cube: Height = {Height}");
+            BaseSquare.PrintInfo();
+        }
     }
+
 }
