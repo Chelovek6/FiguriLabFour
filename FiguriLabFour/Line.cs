@@ -19,7 +19,7 @@ namespace FiguriLabFour
 
         public void PrintInfo()
         {
-            Console.WriteLine("Line:");
+            Console.WriteLine("Линия:");
             StartPoint.PrintInfo();
             EndPoint.PrintInfo();
         }

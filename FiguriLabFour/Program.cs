@@ -6,7 +6,7 @@ Point thirdPoint = new Point(6, 0);
 Triangle triangle = new Triangle(startPoint, endPoint, thirdPoint);
 Tetrahedron tetrahedron = new Tetrahedron(startPoint, endPoint, thirdPoint, 12);
 
-triangle.PrintInfo();
+//triangle.PrintInfo();
 tetrahedron.PrintInfo();
     
 //
@@ -16,8 +16,8 @@ Line line = new Line(FirstPoint, LastPoint);
 Square square = new Square(line);
 Cube cube = new Cube(square, 10);
 
-startPoint.PrintInfo();
-line.PrintInfo();
-square.PrintInfo();
-cube.PrintInfo();
+//startPoint.PrintInfo();
+//line.PrintInfo();
+//square.PrintInfo();
+//cube.PrintInfo();
 

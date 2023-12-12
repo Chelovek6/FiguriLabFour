@@ -15,7 +15,7 @@ namespace FiguriLabFour
 
         public new void PrintInfo() 
         {
-            Console.WriteLine("Triangle:");
+            Console.WriteLine("Треугольник:");
             base.PrintInfo();
         }
     }

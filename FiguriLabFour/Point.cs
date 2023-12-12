@@ -19,7 +19,7 @@ namespace FiguriLabFour
 
         public void PrintInfo()
         {
-            Console.WriteLine($"Point: X = {X}, Y = {Y}");
+            Console.WriteLine($"Точка: X = {X}, Y = {Y}");
         }
     }
 }

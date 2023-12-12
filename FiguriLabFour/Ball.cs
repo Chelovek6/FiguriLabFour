@@ -12,8 +12,7 @@ namespace FiguriLabFour
 
         public Ball(double x, double y, double radius) : base(x, y, radius)
         {
-            // Возможно, вам нужно вычислить объем шара
-            // ...
+            
         }
     }
 }

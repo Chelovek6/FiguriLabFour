@@ -19,7 +19,7 @@ namespace FiguriLabFour
 
         public void PrintInfo()
         {
-            Console.WriteLine($"Cube: Height = {Height}");
+            Console.WriteLine($"Куб: высота = {Height}");
             BaseSquare.PrintInfo();
         }
     }

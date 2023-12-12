@@ -17,7 +17,7 @@ namespace FiguriLabFour
 
         public void PrintInfo()
         {
-            Console.WriteLine("Square:");
+            Console.WriteLine("Квадрат:");
             Side.PrintInfo();
         }
     }
